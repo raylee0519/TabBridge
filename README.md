@@ -1,14 +1,16 @@
 # TabBridge: Bridging Structure and Context for Accurate Table Reasoning
 
+🎉 **Accepted to the ACL 2026 Workshop SURGeLLM** 🎉
+
 ## Abstract
-> Table reasoning remains challenging for Large Language Models (LLMs) as it requires integrating structured tabular information with natural language questions. Previous SQL-based approaches improve table reasoning through Text-to-SQL generation but still rely on surface alignment between question keywords and column headers. As a result, they often misinterpret expressions and generate queries with spurious or missing column mappings. Normalization strategies intended to enhance consistency often distort structural information by over processing or removing significant rows and columns such as subtotals.
-> We introduce TabBridge, a framework that incorporates both textual and contextual information for accurate table reasoning. TabBridge generates a unified textual representation called Table Specification (TabSpec), preserving the structural information through row and column analysis. To ensure accuracy and consistency, we also employ a Reconstruction-based evaluation mechanism to verify and refine the generated TabSpec. The refined TabSpec is then used to generate SQL queries that align with the contextual intent of the question, effectively capturing relevant column semantics often overlooked by previous approaches.
-> Across three public benchmarks, TabBridge consistently outperforms previous SQL-based methods, achieving 73.94\% accuracy on WikiTableQuestions (+5.3 pp over the previous state of the art) and demonstrating improved semantic consistency in free-form reasoning.
+> Table reasoning remains challenging for Large Language Models (LLMs) as it requires integrating structured tabular information with natural language questions. Previous SQL-based approaches rely on surface-level alignment between question keywords and column headers, often generating queries with spurious or missing column mappings. 
+> We introduce TabBridge, a framework that incorporates both structural and contextual information for accurate table reasoning. TabBridge first generates a unified textual representation called Table Specification (TabSpec), preserving the structural information through row and column analysis. In order to ensure accuracy and consistency, we also employ a reconstruction-based evaluation mechanism to verify and refine the generated TabSpec. TabSpec is subsequently used to generate SQL aligned with the contextual intent of the question, enabling accurate interpretation of column semantics that are often overlooked by previous approaches.
+> Across three public benchmarks, TabBridge shows consistent improvements over previous SQL-based methods, achieving 73.94\% accuracy on WikiTableQuestions (+5.3 pp over the previous state of the art). TabBridge also demonstrates robust performance across diverse LLM backbones, confirming its generalizability across model architectures.
 
 ## Method Overview
 
 Our research focuses on improving LLM reasoning and QA performance over table data through:
-![Method Overview](method_overview.png)
+<img width="4544" height="2736" alt="Figure2" src="https://github.com/user-attachments/assets/6d3720a0-eb87-49ea-aaf9-e0b9510672e8" />
 
 
 ## Installation & Setup
