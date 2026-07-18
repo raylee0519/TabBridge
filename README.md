@@ -1,6 +1,7 @@
 # TabBridge: Bridging Structure and Context for Accurate Table Reasoning
 
-🏆 **Best Paper Award at the ACL 2026 Workshop SURGeLLM** 🏆
+🏆 **Best Paper Award at the ACL 2026 Workshop SURGeLLM** 🏆 <br>
+Paper Link : https://aclanthology.org/2026.surgellm-1.14/
 
 ## Abstract
 > Table reasoning remains challenging for Large Language Models (LLMs) as it requires integrating structured tabular information with natural language questions. Previous SQL-based approaches rely on surface-level alignment between question keywords and column headers, often generating queries with spurious or missing column mappings. 
